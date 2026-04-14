@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LibraryManager.Api/LibraryManager.Api.csproj" />
+    <Project Path="src/LibraryManager.Application/LibraryManager.Application.csproj" />
+    <Project Path="src/LibraryManager.Domain/LibraryManager.Domain.csproj" />
+    <Project Path="src/LibraryManager.Infrastructure/LibraryManager.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LibraryManager.E2E.Tests/LibraryManager.E2E.Tests.csproj" />
+    <Project Path="tests/LibraryManager.Integration.Tests/LibraryManager.Integration.Tests.csproj" />
+    <Project Path="tests/LibraryManager.Unit.Tests/LibraryManager.Unit.Tests.csproj" />
+  </Folder>
+</Solution>
