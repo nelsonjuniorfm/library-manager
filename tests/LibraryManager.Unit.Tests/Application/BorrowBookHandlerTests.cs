@@ -14,9 +14,9 @@ namespace LibraryManager.Unit.Tests.Application;
 
 public class BorrowBookHandlerTests
 {
-    private readonly IBookRepository   _books   = Substitute.For<IBookRepository>();
+    private readonly IBookRepository _books = Substitute.For<IBookRepository>();
     private readonly IMemberRepository _members = Substitute.For<IMemberRepository>();
-    private readonly ILoanRepository   _loans   = Substitute.For<ILoanRepository>();
+    private readonly ILoanRepository _loans = Substitute.For<ILoanRepository>();
     private readonly BorrowBookHandler _sut;
 
     public BorrowBookHandlerTests()
@@ -27,9 +27,9 @@ public class BorrowBookHandlerTests
     [Fact]
     public async Task Handle_WhenValid_ReturnsLoanId()
     {
-        var book   = BookFaker.Valid();
+        var book = BookFaker.Valid();
         var member = MemberFaker.Valid();
-        var cmd    = new BorrowBookCommand(book.Id, member.Id);
+        var cmd = new BorrowBookCommand(book.Id, member.Id);
 
         _books.GetByIdAsync(book.Id, default).Returns(book);
         _members.GetByIdAsync(member.Id, default).Returns(member);
@@ -42,9 +42,9 @@ public class BorrowBookHandlerTests
     [Fact]
     public async Task Handle_WhenValid_PersistsLoan()
     {
-        var book   = BookFaker.Valid();
+        var book = BookFaker.Valid();
         var member = MemberFaker.Valid();
-        var cmd    = new BorrowBookCommand(book.Id, member.Id);
+        var cmd = new BorrowBookCommand(book.Id, member.Id);
 
         _books.GetByIdAsync(book.Id, default).Returns(book);
         _members.GetByIdAsync(member.Id, default).Returns(member);
@@ -57,9 +57,9 @@ public class BorrowBookHandlerTests
     [Fact]
     public async Task Handle_WhenValid_ReservesBookCopy()
     {
-        var book   = BookFaker.Valid(totalCopies: 2);
+        var book = BookFaker.Valid(totalCopies: 2);
         var member = MemberFaker.Valid();
-        var cmd    = new BorrowBookCommand(book.Id, member.Id);
+        var cmd = new BorrowBookCommand(book.Id, member.Id);
 
         _books.GetByIdAsync(book.Id, default).Returns(book);
         _members.GetByIdAsync(member.Id, default).Returns(member);
@@ -72,9 +72,9 @@ public class BorrowBookHandlerTests
     [Fact]
     public async Task Handle_WhenValid_IncrementsActiveLoanOnMember()
     {
-        var book   = BookFaker.Valid();
+        var book = BookFaker.Valid();
         var member = MemberFaker.Valid();
-        var cmd    = new BorrowBookCommand(book.Id, member.Id);
+        var cmd = new BorrowBookCommand(book.Id, member.Id);
 
         _books.GetByIdAsync(book.Id, default).Returns(book);
         _members.GetByIdAsync(member.Id, default).Returns(member);
@@ -87,9 +87,9 @@ public class BorrowBookHandlerTests
     [Fact]
     public async Task Handle_WhenValid_UpdatesMemberInRepository()
     {
-        var book   = BookFaker.Valid();
+        var book = BookFaker.Valid();
         var member = MemberFaker.Valid();
-        var cmd    = new BorrowBookCommand(book.Id, member.Id);
+        var cmd = new BorrowBookCommand(book.Id, member.Id);
 
         _books.GetByIdAsync(book.Id, default).Returns(book);
         _members.GetByIdAsync(member.Id, default).Returns(member);
@@ -116,7 +116,7 @@ public class BorrowBookHandlerTests
     public async Task Handle_WhenMemberNotFound_ThrowsKeyNotFoundException()
     {
         var book = BookFaker.Valid();
-        var cmd  = new BorrowBookCommand(book.Id, Guid.NewGuid());
+        var cmd = new BorrowBookCommand(book.Id, Guid.NewGuid());
 
         _books.GetByIdAsync(book.Id, default).Returns(book);
         _members.GetByIdAsync(cmd.MemberId, default).ReturnsNull();
@@ -129,9 +129,9 @@ public class BorrowBookHandlerTests
     [Fact]
     public async Task Handle_WhenBookNotAvailable_ThrowsBookNotAvailableException()
     {
-        var book   = BookFaker.Valid(totalCopies: 1);
+        var book = BookFaker.Valid(totalCopies: 1);
         var member = MemberFaker.Valid();
-        var cmd    = new BorrowBookCommand(book.Id, member.Id);
+        var cmd = new BorrowBookCommand(book.Id, member.Id);
 
         book.Reserve(); // esgota o estoque antes
         _books.GetByIdAsync(book.Id, default).Returns(book);
@@ -145,7 +145,7 @@ public class BorrowBookHandlerTests
     [Fact]
     public async Task Handle_WhenMemberSuspended_ThrowsMemberSuspendedException()
     {
-        var book   = BookFaker.Valid();
+        var book = BookFaker.Valid();
         var member = MemberFaker.Valid();
         member.Suspend();
         var cmd = new BorrowBookCommand(book.Id, member.Id);
@@ -161,7 +161,7 @@ public class BorrowBookHandlerTests
     [Fact]
     public async Task Handle_WhenLoanLimitReached_ThrowsLoanLimitExceededException()
     {
-        var book   = BookFaker.Valid();
+        var book = BookFaker.Valid();
         var member = MemberFaker.Valid();
 
         for (var i = 0; i < LoanLimitExceededException.MaxLoans; i++)
