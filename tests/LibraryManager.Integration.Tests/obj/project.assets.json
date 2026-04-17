@@ -1036,6 +1036,22 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.14.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "SharpZipLib/1.4.2": {
         "type": "package",
         "compile": {
@@ -1291,7 +1307,8 @@
         "dependencies": {
           "LibraryManager.Application": "1.0.0",
           "LibraryManager.Infrastructure": "1.0.0",
-          "Microsoft.AspNetCore.OpenApi": "10.0.4"
+          "Microsoft.AspNetCore.OpenApi": "10.0.4",
+          "Scalar.AspNetCore": "2.14.0"
         },
         "compile": {
           "bin/placeholder/LibraryManager.Api.dll": {}
@@ -2832,6 +2849,25 @@
         "packageIcon.png"
       ]
     },
+    "Scalar.AspNetCore/2.14.0": {
+      "sha512": "YpcCrY+FuPrmFzThm4om8HZ0Lww9vlIQUzUcBpc2Hv4n+oY8SgvFebgBSQJgnaW6y/FgG5J6FU/71HRq/wy9uQ==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.dll",
+        "lib/net10.0/Scalar.AspNetCore.xml",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.14.0.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
     "SharpZipLib/1.4.2": {
       "sha512": "yjj+3zgz8zgXpiiC3ZdF/iyTBbz2fFvMxZFEBPUcwZjIvXOf37Ylm+K58hqMfIBt5JgU/Z2uoUS67JmTLe973A==",
       "type": "package",
@@ -3298,7 +3334,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.106/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

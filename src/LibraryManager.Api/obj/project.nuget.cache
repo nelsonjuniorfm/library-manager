@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Vf+ylhDe/AI=",
+  "dgSpecHash": "I/7DnYAF/mA=",
   "success": true,
   "projectFilePath": "/home/nelson-fernandes/learning/LibraryManager/src/LibraryManager.Api/LibraryManager.Api.csproj",
   "expectedPackageFiles": [
     "/home/nelson-fernandes/.nuget/packages/microsoft.aspnetcore.openapi/10.0.4/microsoft.aspnetcore.openapi.10.0.4.nupkg.sha512",
-    "/home/nelson-fernandes/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+    "/home/nelson-fernandes/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
+    "/home/nelson-fernandes/.nuget/packages/scalar.aspnetcore/2.14.0/scalar.aspnetcore.2.14.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xKwIGqXscG8=",
+  "dgSpecHash": "yA04SD6Ed40=",
   "success": true,
   "projectFilePath": "/home/nelson-fernandes/learning/LibraryManager/tests/LibraryManager.E2E.Tests/LibraryManager.E2E.Tests.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "/home/nelson-fernandes/.nuget/packages/reqnroll/3.3.4/reqnroll.3.3.4.nupkg.sha512",
     "/home/nelson-fernandes/.nuget/packages/reqnroll.tools.msbuild.generation/3.3.4/reqnroll.tools.msbuild.generation.3.3.4.nupkg.sha512",
     "/home/nelson-fernandes/.nuget/packages/reqnroll.xunit/3.3.4/reqnroll.xunit.3.3.4.nupkg.sha512",
+    "/home/nelson-fernandes/.nuget/packages/scalar.aspnetcore/2.14.0/scalar.aspnetcore.2.14.0.nupkg.sha512",
     "/home/nelson-fernandes/.nuget/packages/shouldly/4.3.0/shouldly.4.3.0.nupkg.sha512",
     "/home/nelson-fernandes/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",
     "/home/nelson-fernandes/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",

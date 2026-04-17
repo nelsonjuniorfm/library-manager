@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Cg2wuoidC4g=",
+  "dgSpecHash": "6liqH0urMr8=",
   "success": true,
   "projectFilePath": "/home/nelson-fernandes/learning/LibraryManager/tests/LibraryManager.Integration.Tests/LibraryManager.Integration.Tests.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,7 @@
     "/home/nelson-fernandes/.nuget/packages/microsoft.testplatform.objectmodel/17.14.1/microsoft.testplatform.objectmodel.17.14.1.nupkg.sha512",
     "/home/nelson-fernandes/.nuget/packages/microsoft.testplatform.testhost/17.14.1/microsoft.testplatform.testhost.17.14.1.nupkg.sha512",
     "/home/nelson-fernandes/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/nelson-fernandes/.nuget/packages/scalar.aspnetcore/2.14.0/scalar.aspnetcore.2.14.0.nupkg.sha512",
     "/home/nelson-fernandes/.nuget/packages/sharpziplib/1.4.2/sharpziplib.1.4.2.nupkg.sha512",
     "/home/nelson-fernandes/.nuget/packages/shouldly/4.3.0/shouldly.4.3.0.nupkg.sha512",
     "/home/nelson-fernandes/.nuget/packages/ssh.net/2025.1.0/ssh.net.2025.1.0.nupkg.sha512",
