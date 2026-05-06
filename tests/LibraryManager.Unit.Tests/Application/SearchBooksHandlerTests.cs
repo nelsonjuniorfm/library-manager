@@ -1,5 +1,5 @@
 using LibraryManager.Domain.Interfaces;
-using LibraryManager.Unit.Tests.Helpers;
+using LibraryManager.TestHelpers.Fakers;
 using NSubstitute;
 using Shouldly;
 using LibraryManager.Application.UseCases.SearchBooks;

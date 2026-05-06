@@ -25,6 +25,22 @@ public class Loan
         Status = LoanStatus.Active;
     }
 
+    private Loan() { }
+
+    public static Loan Reconstitute(
+        Guid id, Guid bookId, Guid memberId,
+        DateTime borrowedAt, DateTime dueDate,
+        DateTime? returnedAt, LoanStatus status) => new()
+        {
+            Id = id,
+            BookId = bookId,
+            MemberId = memberId,
+            BorrowedAt = borrowedAt,
+            DueDate = dueDate,
+            ReturnedAt = returnedAt,
+            Status = status
+        };
+
     public void Return(DateTime returnedAt)
     {
         if (Status != LoanStatus.Active && Status != LoanStatus.Overdue)

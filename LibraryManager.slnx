@@ -8,6 +8,7 @@
   <Folder Name="/tests/">
     <Project Path="tests/LibraryManager.E2E.Tests/LibraryManager.E2E.Tests.csproj" />
     <Project Path="tests/LibraryManager.Integration.Tests/LibraryManager.Integration.Tests.csproj" />
+    <Project Path="tests/LibraryManager.TestHelpers/LibraryManager.TestHelpers.csproj" />
     <Project Path="tests/LibraryManager.Unit.Tests/LibraryManager.Unit.Tests.csproj" />
   </Folder>
 </Solution>

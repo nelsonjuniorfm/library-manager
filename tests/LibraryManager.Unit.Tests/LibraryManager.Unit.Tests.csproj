@@ -27,6 +27,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\LibraryManager.Domain\LibraryManager.Domain.csproj" />
     <ProjectReference Include="..\..\src\LibraryManager.Application\LibraryManager.Application.csproj" />
+    <ProjectReference Include="..\LibraryManager.TestHelpers\LibraryManager.TestHelpers.csproj" />
   </ItemGroup>
 
 </Project>

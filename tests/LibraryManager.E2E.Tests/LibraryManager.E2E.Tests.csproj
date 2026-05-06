@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\LibraryManager.Api\LibraryManager.Api.csproj" />
+    <ProjectReference Include="..\LibraryManager.TestHelpers\LibraryManager.TestHelpers.csproj" />
   </ItemGroup>
 
 </Project>

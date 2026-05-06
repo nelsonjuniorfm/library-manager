@@ -2,7 +2,7 @@ using Bogus;
 using LibraryManager.Domain.Entities;
 using LibraryManager.Domain.ValueObjects;
 
-namespace LibraryManager.Unit.Tests.Helpers;
+namespace LibraryManager.TestHelpers.Fakers;
 
 public static class BookFaker
 {

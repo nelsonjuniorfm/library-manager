@@ -1,6 +1,6 @@
 using LibraryManager.Domain.Enums;
 using LibraryManager.Domain.Interfaces;
-using LibraryManager.Unit.Tests.Helpers;
+using LibraryManager.TestHelpers.Fakers;
 using NSubstitute;
 using NSubstitute.ReturnsExtensions;
 using Shouldly;

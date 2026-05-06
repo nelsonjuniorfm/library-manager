@@ -24,6 +24,19 @@ public class Member
         Status = MemberStatus.Active;
     }
 
+    private Member() { }
+
+    public static Member Reconstitute(
+        Guid id, string name, Email email,
+        int activeLoans, MemberStatus status) => new()
+        {
+            Id = id,
+            Name = name,
+            Email = email,
+            ActiveLoans = activeLoans,
+            Status = status
+        };
+
     public void CanBorrow()
     {
         if (Status == MemberStatus.Suspended)

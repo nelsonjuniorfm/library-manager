@@ -1,5 +1,5 @@
 using LibraryManager.Domain.Exceptions;
-using LibraryManager.Unit.Tests.Helpers;
+using LibraryManager.TestHelpers.Fakers;
 using Shouldly;
 
 namespace LibraryManager.Unit.Tests.Domain;
