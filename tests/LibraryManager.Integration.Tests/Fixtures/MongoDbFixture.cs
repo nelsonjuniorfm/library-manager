@@ -5,14 +5,14 @@ namespace LibraryManager.Integration.Tests.Fixtures;
 
 public sealed class MongoDbFixture : IAsyncLifetime
 {
-    private readonly MongoDbContainer _container = new MongoDbBuilder("mongo:7.0")
-        .Build();
+    private readonly MongoDbContainer _container = new MongoDbBuilder("mongo:7.0").Build();
 
     public IMongoDatabase Database { get; private set; } = null!;
     public string ConnectionString => _container.GetConnectionString();
 
     public async Task InitializeAsync()
     {
+        
         await _container.StartAsync();
 
         var client = new MongoClient(ConnectionString);
