@@ -1,12 +1,32 @@
 using Scalar.AspNetCore;
+using LibraryManager.Api.Endpoints;
+using LibraryManager.Api.Middleware;
+using LibraryManager.Application.UseCases.BorrowBook;
+using LibraryManager.Application.UseCases.ReturnBook;
+using LibraryManager.Application.UseCases.SearchBooks;
+using LibraryManager.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddInfrastructure(builder.Configuration);
+
+// Application — handlers
+builder.Services.AddScoped<BorrowBookHandler>();
+builder.Services.AddScoped<ReturnBookHandler>();
+builder.Services.AddScoped<SearchBooksHandler>();
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
+
+// Endpoints
+app.MapBookEndpoints();
+app.MapMemberEndpoints();
+app.MapLoanEndpoints();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -21,28 +41,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
-
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+// Necessário para o WebApplicationFactory nos testes de integração
+public partial class Program { }
