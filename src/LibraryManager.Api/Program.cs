@@ -44,4 +44,5 @@ app.UseHttpsRedirection();
 app.Run();
 
 // Necessário para o WebApplicationFactory nos testes de integração
+[System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class Program { }

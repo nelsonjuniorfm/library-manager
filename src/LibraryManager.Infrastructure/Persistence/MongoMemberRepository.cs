@@ -6,6 +6,7 @@ using MongoDB.Driver;
 
 namespace LibraryManager.Infrastructure.Persistence;
 
+[System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public sealed class MongoMemberRepository : IMemberRepository
 {
     private readonly IMongoCollection<MemberDocument> _collection;

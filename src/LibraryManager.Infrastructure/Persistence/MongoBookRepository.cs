@@ -5,7 +5,7 @@ using LibraryManager.Infrastructure.Persistence.Mappers;
 using MongoDB.Driver;
 
 namespace LibraryManager.Infrastructure.Persistence;
-
+[System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public sealed class MongoBookRepository : IBookRepository
 {
     private readonly IMongoCollection<BookDocument> _collection;

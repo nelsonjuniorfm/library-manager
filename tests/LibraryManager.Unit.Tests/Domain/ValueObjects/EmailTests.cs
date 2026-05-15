@@ -43,4 +43,13 @@ public class EmailTests
 
         a.ShouldBe(b);
     }
+
+    [Fact]
+    public void GetHashCode_SameValue_ReturnsSameHash()
+    {
+        var a = new Email("user@example.com");
+        var b = new Email("user@example.com");
+
+        a.GetHashCode().ShouldBe(b.GetHashCode());
+    }
 }
