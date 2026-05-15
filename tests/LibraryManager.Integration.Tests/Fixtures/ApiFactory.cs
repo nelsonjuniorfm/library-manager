@@ -1,58 +1,41 @@
 using LibraryManager.Infrastructure;
-using MongoDB.Driver;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.TestHost;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using MongoDB.Driver;
 using Testcontainers.MongoDb;
 
 namespace LibraryManager.Integration.Tests.Fixtures;
 
-// Factory separada para os testes de API — também sobe um container próprio
 public sealed class ApiFactory : WebApplicationFactory<Program>, IAsyncLifetime
 {
-    private readonly MongoDbContainer _container = new MongoDbBuilder("mongo:7.0").Build();
+    private readonly MongoDbContainer _mongo = new MongoDbBuilder("mongo:7.0")
+        .WithName($"librarymanager-api-{Guid.NewGuid()}")
+        .WithCleanUp(true)
+        .Build();
 
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
-        builder.ConfigureAppConfiguration((_, config) =>
+        builder.ConfigureTestServices(services =>
         {
-            // Sobrescreve a config da aplicação com o container de teste
-            config.AddInMemoryCollection(new Dictionary<string, string?>
-            {
-                ["MongoDB:ConnectionString"] = _container.GetConnectionString(),
-                ["MongoDB:Database"] = "librarymanager_integration"
-            });
+            // remove a conexão real e o banco real
+            services.RemoveAll<IMongoClient>();
+            services.RemoveAll<IMongoDatabase>();
+
+            // substitui só o que muda: conexão e banco
+            services.AddMongoDb(_mongo.GetConnectionString(), "librarymanager_integration");
         });
     }
 
     public async Task ResetAsync()
     {
-        var client = new MongoClient(_container.GetConnectionString());
-        var db = client.GetDatabase("librarymanager_integration");
-        await db.DropCollectionAsync("books");
-        await db.DropCollectionAsync("members");
-        await db.DropCollectionAsync("loans");
+        var client = new MongoClient(_mongo.GetConnectionString());
+        await client.DropDatabaseAsync("librarymanager_integration");
     }
 
-    public async Task InitializeAsync()
-    {
-        await _container.StartAsync();
-        // var maxRetries = 3;
-        // for (int i = 0; i < maxRetries; i++)
-        // {
-        //     try
-        //     {
-        //         await _container.StartAsync();
-        //         return;
-        //     }
-        //     catch (Exception ex) when (i < maxRetries - 1)
-        //     {
-        //         await Task.Delay(TimeSpan.FromSeconds(2));
-        //         Console.WriteLine($"Tentativa {i + 1} falhou, retrying: {ex.Message}");
-        //     }
-        // }
-    }
-    public new async Task DisposeAsync() => await _container.DisposeAsync();
+    public async Task InitializeAsync() => await _mongo.StartAsync();
+    public new async Task DisposeAsync() => await _mongo.DisposeAsync();
 }
 
 [CollectionDefinition("Api")]

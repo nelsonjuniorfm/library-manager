@@ -14,17 +14,17 @@ public class BorrowBookEndpointTests : IAsyncLifetime
     public BorrowBookEndpointTests(ApiFactory factory)
     {
         _factory = factory;
-        _client  = factory.CreateClient();
+        _client = factory.CreateClient();
     }
 
     public Task InitializeAsync() => _factory.ResetAsync();
-    public Task DisposeAsync()    => Task.CompletedTask;
+    public Task DisposeAsync() => Task.CompletedTask;
 
     [Fact]
     public async Task PostBorrow_WhenValid_Returns201WithLoanId()
     {
         // Arrange — cria livro e membro via API ou direto nos repositórios
-        var bookId   = await SeedBookAsync();
+        var bookId = await SeedBookAsync();
         var memberId = await SeedMemberAsync();
 
         var payload = new { BookId = bookId, MemberId = memberId };
@@ -42,9 +42,9 @@ public class BorrowBookEndpointTests : IAsyncLifetime
     [Fact]
     public async Task PostBorrow_WhenBookNotAvailable_Returns422()
     {
-        var bookId   = await SeedBookAsync(totalCopies: 1);
-        var member1  = await SeedMemberAsync();
-        var member2  = await SeedMemberAsync();
+        var bookId = await SeedBookAsync(totalCopies: 1);
+        var member1 = await SeedMemberAsync();
+        var member2 = await SeedMemberAsync();
 
         // Primeiro empréstimo esgota o livro
         await _client.PostAsJsonAsync("/loans",
@@ -61,7 +61,7 @@ public class BorrowBookEndpointTests : IAsyncLifetime
     public async Task PostBorrow_WhenBookNotFound_Returns404()
     {
         var memberId = await SeedMemberAsync();
-        var payload  = new { BookId = Guid.NewGuid(), MemberId = memberId };
+        var payload = new { BookId = Guid.NewGuid(), MemberId = memberId };
 
         var response = await _client.PostAsJsonAsync("/loans", payload);
 
@@ -71,19 +71,27 @@ public class BorrowBookEndpointTests : IAsyncLifetime
     // Helpers de seed
     private async Task<Guid> SeedBookAsync(int totalCopies = 3)
     {
-        var payload  = new { ISBN = "978-3-16-148410-0", Title = "Test Book",
-                             Author = "Author", TotalCopies = totalCopies };
+        var payload = new
+        {
+            ISBN = "978-3-16-148410-0",
+            Title = "Test Book",
+            Author = "Author",
+            TotalCopies = totalCopies
+        };
         var response = await _client.PostAsJsonAsync("/books", payload);
-        var body     = await response.Content.ReadFromJsonAsync<IdResponse>();
+        var body = await response.Content.ReadFromJsonAsync<IdResponse>();
         return body!.Id;
     }
 
     private async Task<Guid> SeedMemberAsync()
     {
-        var payload  = new { Name = "Test Member",
-                             Email = $"{Guid.NewGuid()}@test.com" };
+        var payload = new
+        {
+            Name = "Test Member",
+            Email = $"{Guid.NewGuid()}@test.com"
+        };
         var response = await _client.PostAsJsonAsync("/members", payload);
-        var body     = await response.Content.ReadFromJsonAsync<IdResponse>();
+        var body = await response.Content.ReadFromJsonAsync<IdResponse>();
         return body!.Id;
     }
 

@@ -1,6 +1,8 @@
+using LibraryManager.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.TestHost;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using MongoDB.Driver;
 using Testcontainers.MongoDb;
 
@@ -8,17 +10,21 @@ namespace LibraryManager.E2E.Tests.Support;
 
 public sealed class E2EFactory : WebApplicationFactory<Program>, IAsyncLifetime
 {
-    private readonly MongoDbContainer _mongo = new MongoDbBuilder("mongo:7.0").Build();
+    private readonly MongoDbContainer _mongo = new MongoDbBuilder("mongo:7.0")
+        .WithName($"librarymanager-api-{Guid.NewGuid()}")
+        .WithCleanUp(true)
+        .Build();
 
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
-        builder.ConfigureAppConfiguration((_, config) =>
+        builder.ConfigureTestServices(services =>
         {
-            config.AddInMemoryCollection(new Dictionary<string, string?>
-            {
-                ["MongoDB:ConnectionString"] = _mongo.GetConnectionString(),
-                ["MongoDB:Database"] = "librarymanager_e2e"
-            });
+            // remove a conexão real e o banco real
+            services.RemoveAll<IMongoClient>();
+            services.RemoveAll<IMongoDatabase>();
+
+            // substitui só o que muda: conexão e banco
+            services.AddMongoDb(_mongo.GetConnectionString(), "librarymanager_e2e");
         });
     }
 

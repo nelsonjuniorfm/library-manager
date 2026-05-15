@@ -18,15 +18,32 @@ public static class DependencyInjection
         var databaseName = configuration["MongoDB:Database"]
             ?? throw new InvalidOperationException("MongoDB:Database is not configured.");
 
-        services.AddSingleton<IMongoClient>(_ =>
-            new MongoClient(connectionString));
+        services.AddMongoDb(connectionString, databaseName);
+        services.AddRepositories();
 
-        services.AddScoped(sp =>
-            sp.GetRequiredService<IMongoClient>().GetDatabase(databaseName));
+        return services;
+    }
 
-        services.AddScoped<IBookRepository,   MongoBookRepository>();
+    // método público para os testes sobrescreverem só a conexão
+    public static IServiceCollection AddMongoDb(
+        this IServiceCollection services,
+        string connectionString,
+        string databaseName)
+    {
+        services.AddSingleton<IMongoClient>(_ => new MongoClient(connectionString));
+
+        services.AddScoped(sp => sp.GetRequiredService<IMongoClient>()
+            .GetDatabase(databaseName));
+
+        return services;
+    }
+
+    // repositórios em método separado — nunca precisam ser reescritos
+    public static IServiceCollection AddRepositories(this IServiceCollection services)
+    {
+        services.AddScoped<IBookRepository, MongoBookRepository>();
         services.AddScoped<IMemberRepository, MongoMemberRepository>();
-        services.AddScoped<ILoanRepository,   MongoLoanRepository>();
+        services.AddScoped<ILoanRepository, MongoLoanRepository>();
 
         return services;
     }

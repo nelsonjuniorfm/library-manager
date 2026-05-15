@@ -418,3 +418,8 @@ FodyWeavers.xsd
 *.msp
 
 nao_enviar.md
+
+# Coverage
+coverage/
+*.cobertura.xml
+*.opencover.xml

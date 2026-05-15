@@ -10,9 +10,9 @@ namespace LibraryManager.Unit.Tests.Application;
 
 public class ReturnBookHandlerTests
 {
-    private readonly IBookRepository   _books   = Substitute.For<IBookRepository>();
+    private readonly IBookRepository _books = Substitute.For<IBookRepository>();
     private readonly IMemberRepository _members = Substitute.For<IMemberRepository>();
-    private readonly ILoanRepository   _loans   = Substitute.For<ILoanRepository>();
+    private readonly ILoanRepository _loans = Substitute.For<ILoanRepository>();
     private readonly ReturnBookHandler _sut;
 
     public ReturnBookHandlerTests()
@@ -21,9 +21,10 @@ public class ReturnBookHandlerTests
     [Fact]
     public async Task Handle_WhenValid_SetsLoanStatusToReturned()
     {
-        var book   = BookFaker.Valid();
+        var book = BookFaker.Valid(totalCopies: 2);
         var member = MemberFaker.Valid();
-        var loan   = LoanFaker.Active(book.Id, member.Id);
+        var loan = LoanFaker.Active(book.Id, member.Id);
+        book.Reserve(); // ← simula que a cópia foi reservada no empréstimo
         member.IncrementLoans();
 
         _loans.GetByIdAsync(loan.Id, default).Returns(loan);
@@ -38,9 +39,9 @@ public class ReturnBookHandlerTests
     [Fact]
     public async Task Handle_WhenValid_ReleasesBookCopy()
     {
-        var book   = BookFaker.Valid(totalCopies: 2);
+        var book = BookFaker.Valid(totalCopies: 2);
         var member = MemberFaker.Valid();
-        var loan   = LoanFaker.Active(book.Id, member.Id);
+        var loan = LoanFaker.Active(book.Id, member.Id);
         book.Reserve();
         member.IncrementLoans();
 
@@ -56,9 +57,10 @@ public class ReturnBookHandlerTests
     [Fact]
     public async Task Handle_WhenValid_DecrementsActiveLoanOnMember()
     {
-        var book   = BookFaker.Valid();
+        var book = BookFaker.Valid(totalCopies: 2);
         var member = MemberFaker.Valid();
-        var loan   = LoanFaker.Active(book.Id, member.Id);
+        var loan = LoanFaker.Active(book.Id, member.Id);
+        book.Reserve(); // ← faltava
         member.IncrementLoans();
 
         _loans.GetByIdAsync(loan.Id, default).Returns(loan);
@@ -73,9 +75,10 @@ public class ReturnBookHandlerTests
     [Fact]
     public async Task Handle_WhenValid_UpdatesLoanAndBookAndMember()
     {
-        var book   = BookFaker.Valid();
+        var book = BookFaker.Valid(totalCopies: 2);
         var member = MemberFaker.Valid();
-        var loan   = LoanFaker.Active(book.Id, member.Id);
+        var loan = LoanFaker.Active(book.Id, member.Id);
+        book.Reserve(); // ← faltava
         member.IncrementLoans();
 
         _loans.GetByIdAsync(loan.Id, default).Returns(loan);
