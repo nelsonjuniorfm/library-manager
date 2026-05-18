@@ -78,27 +78,21 @@ jobs:
       - name: Run Unit Tests
         run: |
           dotnet test tests/LibraryManager.Unit.Tests \
-            --no-build \
             --configuration Release \
             --collect:"XPlat Code Coverage" \
             --results-directory ./coverage/unit \
             --logger "trx;LogFileName=unit-results.trx"
-          # ↑ trx = formato de resultado lido pelo GitHub Actions
-          #   gera um arquivo XML com pass/fail de cada teste
-
-      - name: Upload unit test results
-        uses: actions/upload-artifact@v4
+      - name: List coverage files
         if: always()
-        # ↑ publica mesmo se os testes falharam — para ver o relatório
-        with:
-          name: unit-test-results
-          path: ./coverage/unit
+        run: find ./coverage -name "*.xml" 2>/dev/null || echo "Nenhum XML encontrado"
 
       - name: Upload unit coverage
         uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: coverage-unit
-          path: ./coverage/unit/**/coverage.cobertura.xml
+          path: ./coverage/unit
+          if-no-files-found: warn
 
   # ────────────────────────────────────────────────────────────
   # JOB 3 — Testes de Integração e E2E
