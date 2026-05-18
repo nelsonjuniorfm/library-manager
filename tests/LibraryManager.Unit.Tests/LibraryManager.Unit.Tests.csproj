@@ -7,16 +7,6 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <CollectCoverage>true</CollectCoverage>
-    <CoverletOutputFormat>cobertura</CoverletOutputFormat>
-    <CoverletOutput>./coverage/</CoverletOutput>
-    <!-- exclui código gerado, migrations e o próprio projeto de teste -->
-    <Exclude>[LibraryManager.Unit.Tests]*,[LibraryManager.TestHelpers]*</Exclude>
-    <!-- inclui apenas o código de produção -->
-    <Include>[LibraryManager.Domain]*,[LibraryManager.Application]*</Include>
-  </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Bogus" Version="35.6.5" />
     <PackageReference Include="coverlet.collector" Version="10.0.0">

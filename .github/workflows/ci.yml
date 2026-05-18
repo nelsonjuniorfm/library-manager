@@ -121,7 +121,6 @@ jobs:
       - name: Run Integration Tests
         run: |
           dotnet test tests/LibraryManager.Integration.Tests \
-            --no-build \
             --configuration Release \
             --collect:"XPlat Code Coverage" \
             --results-directory ./coverage/integration \
@@ -130,7 +129,6 @@ jobs:
       - name: Run E2E Tests
         run: |
           dotnet test tests/LibraryManager.E2E.Tests \
-            --no-build \
             --configuration Release \
             --collect:"XPlat Code Coverage" \
             --results-directory ./coverage/e2e \
