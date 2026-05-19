@@ -160,6 +160,11 @@ jobs:
     # ↑ gera o relatório mesmo se algum teste falhou
     #   para ver quais áreas estão descobertas
 
+    permissions:
+      contents: write   # ← permite push para gh-pages
+      pages: write
+      id-token: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
