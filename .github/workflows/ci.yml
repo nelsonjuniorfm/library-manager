@@ -223,3 +223,12 @@ jobs:
         with:
           header: coverage-report
           path: ./coverage/report/Summary.txt
+
+      - name: Deploy coverage report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        # ↑ só publica quando o push é na main — não em PRs
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./coverage/report
+          destination_dir: coverage
