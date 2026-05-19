@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.9554317548746518" branch-rate="0.7910447761194029" lines-covered="343" lines-valid="359" branches-covered="53" branches-valid="67" complexity="158" version="0" timestamp="1779232887">
+  <sources>
+    <source>/home/runner/work/library-manager/library-manager/</source>
+  </sources>
+  <packages>
+    <package name="LibraryManager.Api" line-rate="0.8947368421052632" branch-rate="0.6" complexity="18">
+      <classes>
+        <class name="LibraryManager.Api.Endpoints.BookEndpoints" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Api/Endpoints/BookEndpoints.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MapBookEndpoints" signature="(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="4" branch="false" />
+                <line number="15" hits="4" branch="false" />
+                <line number="16" hits="4" branch="false" />
+                <line number="17" hits="12" branch="false" />
+                <line number="18" hits="12" branch="false" />
+                <line number="19" hits="12" branch="false" />
+                <line number="20" hits="12" branch="false" />
+                <line number="21" hits="12" branch="false" />
+                <line number="22" hits="4" branch="false" />
+                <line number="23" hits="12" branch="false" />
+                <line number="24" hits="4" branch="false" />
+                <line number="25" hits="12" branch="false" />
+                <line number="26" hits="16" branch="false" />
+                <line number="28" hits="4" branch="false" />
+                <line number="29" hits="4" branch="false" />
+                <line number="30" hits="8" branch="false" />
+                <line number="31" hits="8" branch="false" />
+                <line number="32" hits="12" branch="false" />
+                <line number="34" hits="4" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="4" branch="false" />
+            <line number="15" hits="4" branch="false" />
+            <line number="16" hits="4" branch="false" />
+            <line number="17" hits="12" branch="false" />
+            <line number="18" hits="12" branch="false" />
+            <line number="19" hits="12" branch="false" />
+            <line number="20" hits="12" branch="false" />
+            <line number="21" hits="12" branch="false" />
+            <line number="22" hits="4" branch="false" />
+            <line number="23" hits="12" branch="false" />
+            <line number="24" hits="4" branch="false" />
+            <line number="25" hits="12" branch="false" />
+            <line number="26" hits="16" branch="false" />
+            <line number="28" hits="4" branch="false" />
+            <line number="29" hits="4" branch="false" />
+            <line number="30" hits="8" branch="false" />
+            <line number="31" hits="8" branch="false" />
+            <line number="32" hits="12" branch="false" />
+            <line number="34" hits="4" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Api.Endpoints.LoanEndpoints" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Api/Endpoints/LoanEndpoints.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MapLoanEndpoints" signature="(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="4" branch="false" />
+                <line number="13" hits="4" branch="false" />
+                <line number="14" hits="4" branch="false" />
+                <line number="15" hits="16" branch="false" />
+                <line number="16" hits="16" branch="false" />
+                <line number="17" hits="4" branch="false" />
+                <line number="18" hits="10" branch="false" />
+                <line number="19" hits="14" branch="false" />
+                <line number="21" hits="4" branch="false" />
+                <line number="22" hits="4" branch="false" />
+                <line number="23" hits="2" branch="false" />
+                <line number="24" hits="4" branch="false" />
+                <line number="25" hits="2" branch="false" />
+                <line number="26" hits="6" branch="false" />
+                <line number="28" hits="4" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="4" branch="false" />
+            <line number="13" hits="4" branch="false" />
+            <line number="14" hits="4" branch="false" />
+            <line number="15" hits="16" branch="false" />
+            <line number="16" hits="16" branch="false" />
+            <line number="17" hits="4" branch="false" />
+            <line number="18" hits="10" branch="false" />
+            <line number="19" hits="14" branch="false" />
+            <line number="21" hits="4" branch="false" />
+            <line number="22" hits="4" branch="false" />
+            <line number="23" hits="2" branch="false" />
+            <line number="24" hits="4" branch="false" />
+            <line number="25" hits="2" branch="false" />
+            <line number="26" hits="6" branch="false" />
+            <line number="28" hits="4" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Api.Endpoints.MemberEndpoints" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Api/Endpoints/MemberEndpoints.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MapMemberEndpoints" signature="(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="4" branch="false" />
+                <line number="14" hits="4" branch="false" />
+                <line number="15" hits="4" branch="false" />
+                <line number="16" hits="16" branch="false" />
+                <line number="17" hits="4" branch="false" />
+                <line number="18" hits="16" branch="false" />
+                <line number="19" hits="4" branch="false" />
+                <line number="20" hits="16" branch="false" />
+                <line number="21" hits="20" branch="false" />
+                <line number="23" hits="4" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="4" branch="false" />
+            <line number="14" hits="4" branch="false" />
+            <line number="15" hits="4" branch="false" />
+            <line number="16" hits="16" branch="false" />
+            <line number="17" hits="4" branch="false" />
+            <line number="18" hits="16" branch="false" />
+            <line number="19" hits="4" branch="false" />
+            <line number="20" hits="16" branch="false" />
+            <line number="21" hits="20" branch="false" />
+            <line number="23" hits="4" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Api.Middleware.ExceptionMiddleware" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Api/Middleware/ExceptionMiddleware.cs" line-rate="0.6666666666666666" branch-rate="0.6" complexity="7">
+          <methods>
+            <method name="WriteErrorAsync" signature="(Microsoft.AspNetCore.Http.HttpContext,System.Int32,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="6" branch="false" />
+                <line number="40" hits="6" branch="false" />
+                <line number="42" hits="6" branch="false" />
+                <line number="43" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger`1&lt;LibraryManager.Api.Middleware.ExceptionMiddleware&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="InvokeAsync" signature="()" line-rate="0.5789473684210527" branch-rate="0.6" complexity="5">
+              <lines>
+                <line number="12" hits="54" branch="false" />
+                <line number="13" hits="48" branch="false" />
+                <line number="14" hits="2" branch="false" />
+                <line number="16" hits="2" branch="false" />
+                <line number="17" hits="2" branch="false" />
+                <line number="18" hits="2" branch="false" />
+                <line number="19" hits="4" branch="false" />
+                <line number="21" hits="4" branch="false" />
+                <line number="22" hits="4" branch="false" />
+                <line number="23" hits="4" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="true" condition-coverage="60% (3/5)" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="35" hits="54" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="4" branch="false" />
+            <line number="12" hits="54" branch="false" />
+            <line number="13" hits="48" branch="false" />
+            <line number="14" hits="2" branch="false" />
+            <line number="16" hits="2" branch="false" />
+            <line number="17" hits="2" branch="false" />
+            <line number="18" hits="2" branch="false" />
+            <line number="19" hits="4" branch="false" />
+            <line number="21" hits="4" branch="false" />
+            <line number="22" hits="4" branch="false" />
+            <line number="23" hits="4" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="true" condition-coverage="60% (3/5)" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="35" hits="54" branch="false" />
+            <line number="39" hits="6" branch="false" />
+            <line number="40" hits="6" branch="false" />
+            <line number="42" hits="6" branch="false" />
+            <line number="43" hits="6" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Api.Requests.BorrowBookRequest" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Api/Requests/BorrowBookRequest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_BookId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="48" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="48" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Api.Requests.CreateBookRequest" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Api/Requests/CreateBookRequest.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_ISBN" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="4" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Title" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Author" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="get_TotalCopies" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="24" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="12" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="12" branch="false" />
+            <line number="4" hits="12" branch="false" />
+            <line number="5" hits="12" branch="false" />
+            <line number="6" hits="12" branch="false" />
+            <line number="7" hits="24" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Api.Requests.CreateMemberRequest" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Api/Requests/CreateMemberRequest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="48" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="48" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Api.Requests.ReturnBookRequest" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Api/Requests/ReturnBookRequest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_LoanId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="4" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="LibraryManager.Application" line-rate="1" branch-rate="0.8" complexity="24">
+      <classes>
+        <class name="LibraryManager.Application.UseCases.BorrowBook.BorrowBookCommand" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Application/UseCases/BorrowBook/BorrowBookCommand.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_BookId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="114" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="114" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Application.UseCases.BorrowBook.BorrowBookHandler" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Application/UseCases/BorrowBook/BorrowBookHandler.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name=".ctor" signature="(LibraryManager.Domain.Interfaces.IBookRepository,LibraryManager.Domain.Interfaces.IMemberRepository,LibraryManager.Domain.Interfaces.ILoanRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="36" branch="false" />
+                <line number="15" hits="36" branch="false" />
+                <line number="16" hits="36" branch="false" />
+                <line number="17" hits="36" branch="false" />
+                <line number="19" hits="36" branch="false" />
+                <line number="20" hits="36" branch="false" />
+                <line number="21" hits="36" branch="false" />
+                <line number="22" hits="36" branch="false" />
+              </lines>
+            </method>
+            <method name="Handle" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="27" hits="36" branch="true" condition-coverage="100% (2/2)" />
+                <line number="28" hits="36" branch="false" />
+                <line number="30" hits="32" branch="true" condition-coverage="100% (2/2)" />
+                <line number="31" hits="32" branch="false" />
+                <line number="34" hits="30" branch="false" />
+                <line number="37" hits="26" branch="false" />
+                <line number="38" hits="20" branch="false" />
+                <line number="41" hits="20" branch="false" />
+                <line number="44" hits="20" branch="false" />
+                <line number="45" hits="20" branch="false" />
+                <line number="46" hits="20" branch="false" />
+                <line number="48" hits="20" branch="false" />
+                <line number="49" hits="20" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="36" branch="false" />
+            <line number="15" hits="36" branch="false" />
+            <line number="16" hits="36" branch="false" />
+            <line number="17" hits="36" branch="false" />
+            <line number="19" hits="36" branch="false" />
+            <line number="20" hits="36" branch="false" />
+            <line number="21" hits="36" branch="false" />
+            <line number="22" hits="36" branch="false" />
+            <line number="27" hits="36" branch="true" condition-coverage="100% (2/2)" />
+            <line number="28" hits="36" branch="false" />
+            <line number="30" hits="32" branch="true" condition-coverage="100% (2/2)" />
+            <line number="31" hits="32" branch="false" />
+            <line number="34" hits="30" branch="false" />
+            <line number="37" hits="26" branch="false" />
+            <line number="38" hits="20" branch="false" />
+            <line number="41" hits="20" branch="false" />
+            <line number="44" hits="20" branch="false" />
+            <line number="45" hits="20" branch="false" />
+            <line number="46" hits="20" branch="false" />
+            <line number="48" hits="20" branch="false" />
+            <line number="49" hits="20" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Application.UseCases.ReturnBook.ReturnBookCommand" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Application/UseCases/ReturnBook/ReturnBookCommand.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_LoanId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="26" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="26" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Application.UseCases.ReturnBook.ReturnBookHandler" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Application/UseCases/ReturnBook/ReturnBookHandler.cs" line-rate="1" branch-rate="0.6666666666666666" complexity="7">
+          <methods>
+            <method name=".ctor" signature="(LibraryManager.Domain.Interfaces.IBookRepository,LibraryManager.Domain.Interfaces.IMemberRepository,LibraryManager.Domain.Interfaces.ILoanRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="12" branch="false" />
+                <line number="13" hits="12" branch="false" />
+                <line number="14" hits="12" branch="false" />
+                <line number="15" hits="12" branch="false" />
+                <line number="17" hits="12" branch="false" />
+                <line number="18" hits="12" branch="false" />
+                <line number="19" hits="12" branch="false" />
+                <line number="20" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="Handle" signature="()" line-rate="1" branch-rate="0.6666666666666666" complexity="6">
+              <lines>
+                <line number="25" hits="12" branch="true" condition-coverage="100% (2/2)" />
+                <line number="26" hits="12" branch="false" />
+                <line number="29" hits="10" branch="true" condition-coverage="50% (1/2)" />
+                <line number="30" hits="10" branch="false" />
+                <line number="32" hits="10" branch="true" condition-coverage="50% (1/2)" />
+                <line number="33" hits="10" branch="false" />
+                <line number="36" hits="10" branch="false" />
+                <line number="37" hits="10" branch="false" />
+                <line number="38" hits="10" branch="false" />
+                <line number="41" hits="10" branch="false" />
+                <line number="42" hits="10" branch="false" />
+                <line number="43" hits="10" branch="false" />
+                <line number="45" hits="10" branch="false" />
+                <line number="46" hits="10" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="12" branch="false" />
+            <line number="13" hits="12" branch="false" />
+            <line number="14" hits="12" branch="false" />
+            <line number="15" hits="12" branch="false" />
+            <line number="17" hits="12" branch="false" />
+            <line number="18" hits="12" branch="false" />
+            <line number="19" hits="12" branch="false" />
+            <line number="20" hits="12" branch="false" />
+            <line number="25" hits="12" branch="true" condition-coverage="100% (2/2)" />
+            <line number="26" hits="12" branch="false" />
+            <line number="29" hits="10" branch="true" condition-coverage="50% (1/2)" />
+            <line number="30" hits="10" branch="false" />
+            <line number="32" hits="10" branch="true" condition-coverage="50% (1/2)" />
+            <line number="33" hits="10" branch="false" />
+            <line number="36" hits="10" branch="false" />
+            <line number="37" hits="10" branch="false" />
+            <line number="38" hits="10" branch="false" />
+            <line number="41" hits="10" branch="false" />
+            <line number="42" hits="10" branch="false" />
+            <line number="43" hits="10" branch="false" />
+            <line number="45" hits="10" branch="false" />
+            <line number="46" hits="10" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Application.UseCases.SearchBooks.BookResult" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Application/UseCases/SearchBooks/BookResult.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ISBN" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Title" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Author" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="get_AvailableCopies" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="get_TotalCopies" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="16" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.String,System.String,System.String,System.Int32,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="4" hits="10" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="10" branch="false" />
+            <line number="5" hits="6" branch="false" />
+            <line number="6" hits="6" branch="false" />
+            <line number="7" hits="6" branch="false" />
+            <line number="8" hits="6" branch="false" />
+            <line number="9" hits="6" branch="false" />
+            <line number="10" hits="16" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Application.UseCases.SearchBooks.SearchBooksHandler" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Application/UseCases/SearchBooks/SearchBooksHandler.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name=".ctor" signature="(LibraryManager.Domain.Interfaces.IBookRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="28" branch="false" />
+              </lines>
+            </method>
+            <method name="Handle" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="14" branch="false" />
+                <line number="19" hits="24" branch="false" />
+                <line number="20" hits="24" branch="false" />
+                <line number="21" hits="24" branch="false" />
+                <line number="22" hits="24" branch="false" />
+                <line number="23" hits="24" branch="false" />
+                <line number="24" hits="24" branch="false" />
+                <line number="25" hits="24" branch="false" />
+                <line number="26" hits="14" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="28" branch="false" />
+            <line number="17" hits="14" branch="false" />
+            <line number="19" hits="24" branch="false" />
+            <line number="20" hits="24" branch="false" />
+            <line number="21" hits="24" branch="false" />
+            <line number="22" hits="24" branch="false" />
+            <line number="23" hits="24" branch="false" />
+            <line number="24" hits="24" branch="false" />
+            <line number="25" hits="24" branch="false" />
+            <line number="26" hits="14" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Application.UseCases.SearchBooks.SearchBooksQuery" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Application/UseCases/SearchBooks/SearchBooksQuery.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Term" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="28" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="28" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="LibraryManager.Domain" line-rate="0.9424460431654677" branch-rate="0.8333333333333334" complexity="86">
+      <classes>
+        <class name="LibraryManager.Domain.Entities.Book" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Domain/Entities/Book.cs" line-rate="0.9736842105263158" branch-rate="0.9" complexity="18">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="264" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ISBN" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="162" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Title" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="262" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Author" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="256" branch="false" />
+              </lines>
+            </method>
+            <method name="get_TotalCopies" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="160" branch="false" />
+              </lines>
+            </method>
+            <method name="get_AvailableCopies" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="330" branch="false" />
+              </lines>
+            </method>
+            <method name="Reconstitute" signature="(System.Guid,LibraryManager.Domain.ValueObjects.ISBN,System.String,System.String,System.Int32,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="38" hits="38" branch="false" />
+                <line number="39" hits="38" branch="false" />
+                <line number="40" hits="38" branch="false" />
+                <line number="41" hits="38" branch="false" />
+                <line number="42" hits="38" branch="false" />
+                <line number="43" hits="38" branch="false" />
+                <line number="44" hits="38" branch="false" />
+                <line number="45" hits="38" branch="false" />
+                <line number="46" hits="38" branch="false" />
+              </lines>
+            </method>
+            <method name="Reserve" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="50" hits="50" branch="true" condition-coverage="100% (2/2)" />
+                <line number="51" hits="8" branch="false" />
+                <line number="53" hits="42" branch="false" />
+                <line number="54" hits="42" branch="false" />
+              </lines>
+            </method>
+            <method name="Release" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="58" hits="14" branch="true" condition-coverage="100% (2/2)" />
+                <line number="59" hits="2" branch="false" />
+                <line number="61" hits="12" branch="false" />
+                <line number="62" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(LibraryManager.Domain.ValueObjects.ISBN,System.String,System.String,System.Int32)" line-rate="0.9285714285714286" branch-rate="0.8333333333333334" complexity="6">
+              <lines>
+                <line number="15" hits="72" branch="false" />
+                <line number="17" hits="72" branch="true" condition-coverage="100% (2/2)" />
+                <line number="18" hits="4" branch="false" />
+                <line number="20" hits="68" branch="true" condition-coverage="50% (1/2)" />
+                <line number="21" hits="0" branch="false" />
+                <line number="23" hits="68" branch="true" condition-coverage="100% (2/2)" />
+                <line number="24" hits="6" branch="false" />
+                <line number="26" hits="62" branch="false" />
+                <line number="27" hits="62" branch="false" />
+                <line number="28" hits="62" branch="false" />
+                <line number="29" hits="62" branch="false" />
+                <line number="30" hits="62" branch="false" />
+                <line number="31" hits="62" branch="false" />
+                <line number="32" hits="62" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="76" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="264" branch="false" />
+            <line number="9" hits="162" branch="false" />
+            <line number="10" hits="262" branch="false" />
+            <line number="11" hits="256" branch="false" />
+            <line number="12" hits="160" branch="false" />
+            <line number="13" hits="330" branch="false" />
+            <line number="15" hits="72" branch="false" />
+            <line number="17" hits="72" branch="true" condition-coverage="100% (2/2)" />
+            <line number="18" hits="4" branch="false" />
+            <line number="20" hits="68" branch="true" condition-coverage="50% (1/2)" />
+            <line number="21" hits="0" branch="false" />
+            <line number="23" hits="68" branch="true" condition-coverage="100% (2/2)" />
+            <line number="24" hits="6" branch="false" />
+            <line number="26" hits="62" branch="false" />
+            <line number="27" hits="62" branch="false" />
+            <line number="28" hits="62" branch="false" />
+            <line number="29" hits="62" branch="false" />
+            <line number="30" hits="62" branch="false" />
+            <line number="31" hits="62" branch="false" />
+            <line number="32" hits="62" branch="false" />
+            <line number="34" hits="76" branch="false" />
+            <line number="38" hits="38" branch="false" />
+            <line number="39" hits="38" branch="false" />
+            <line number="40" hits="38" branch="false" />
+            <line number="41" hits="38" branch="false" />
+            <line number="42" hits="38" branch="false" />
+            <line number="43" hits="38" branch="false" />
+            <line number="44" hits="38" branch="false" />
+            <line number="45" hits="38" branch="false" />
+            <line number="46" hits="38" branch="false" />
+            <line number="50" hits="50" branch="true" condition-coverage="100% (2/2)" />
+            <line number="51" hits="8" branch="false" />
+            <line number="53" hits="42" branch="false" />
+            <line number="54" hits="42" branch="false" />
+            <line number="58" hits="14" branch="true" condition-coverage="100% (2/2)" />
+            <line number="59" hits="2" branch="false" />
+            <line number="61" hits="12" branch="false" />
+            <line number="62" hits="12" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Domain.Entities.Loan" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Domain/Entities/Loan.cs" line-rate="1" branch-rate="1" complexity="19">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="144" branch="false" />
+              </lines>
+            </method>
+            <method name="get_BookId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="108" branch="false" />
+              </lines>
+            </method>
+            <method name="get_MemberId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="104" branch="false" />
+              </lines>
+            </method>
+            <method name="get_BorrowedAt" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="94" branch="false" />
+              </lines>
+            </method>
+            <method name="get_DueDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="100" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ReturnedAt" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="66" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="184" branch="false" />
+              </lines>
+            </method>
+            <method name="Reconstitute" signature="(System.Guid,System.Guid,System.Guid,System.DateTime,System.DateTime,System.Nullable`1&lt;System.DateTime&gt;,LibraryManager.Domain.Enums.LoanStatus)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="12" branch="false" />
+                <line number="34" hits="12" branch="false" />
+                <line number="35" hits="12" branch="false" />
+                <line number="36" hits="12" branch="false" />
+                <line number="37" hits="12" branch="false" />
+                <line number="38" hits="12" branch="false" />
+                <line number="39" hits="12" branch="false" />
+                <line number="40" hits="12" branch="false" />
+                <line number="41" hits="12" branch="false" />
+                <line number="42" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="Return" signature="(System.DateTime)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="46" hits="28" branch="true" condition-coverage="100% (4/4)" />
+                <line number="47" hits="2" branch="false" />
+                <line number="49" hits="26" branch="false" />
+                <line number="50" hits="26" branch="false" />
+                <line number="51" hits="26" branch="false" />
+              </lines>
+            </method>
+            <method name="IsOverdue" signature="(System.DateTime)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="53" hits="6" branch="true" condition-coverage="100% (2/2)" />
+              </lines>
+            </method>
+            <method name="MarkAsOverdue" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="57" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="58" hits="4" branch="false" />
+                <line number="59" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Guid,System.Guid,System.DateTime,System.Int32)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="15" hits="62" branch="false" />
+                <line number="17" hits="62" branch="true" condition-coverage="100% (2/2)" />
+                <line number="18" hits="4" branch="false" />
+                <line number="20" hits="58" branch="false" />
+                <line number="21" hits="58" branch="false" />
+                <line number="22" hits="58" branch="false" />
+                <line number="23" hits="58" branch="false" />
+                <line number="24" hits="58" branch="false" />
+                <line number="25" hits="58" branch="false" />
+                <line number="26" hits="58" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="24" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="144" branch="false" />
+            <line number="8" hits="108" branch="false" />
+            <line number="9" hits="104" branch="false" />
+            <line number="10" hits="94" branch="false" />
+            <line number="11" hits="100" branch="false" />
+            <line number="12" hits="66" branch="false" />
+            <line number="13" hits="184" branch="false" />
+            <line number="15" hits="62" branch="false" />
+            <line number="17" hits="62" branch="true" condition-coverage="100% (2/2)" />
+            <line number="18" hits="4" branch="false" />
+            <line number="20" hits="58" branch="false" />
+            <line number="21" hits="58" branch="false" />
+            <line number="22" hits="58" branch="false" />
+            <line number="23" hits="58" branch="false" />
+            <line number="24" hits="58" branch="false" />
+            <line number="25" hits="58" branch="false" />
+            <line number="26" hits="58" branch="false" />
+            <line number="28" hits="24" branch="false" />
+            <line number="33" hits="12" branch="false" />
+            <line number="34" hits="12" branch="false" />
+            <line number="35" hits="12" branch="false" />
+            <line number="36" hits="12" branch="false" />
+            <line number="37" hits="12" branch="false" />
+            <line number="38" hits="12" branch="false" />
+            <line number="39" hits="12" branch="false" />
+            <line number="40" hits="12" branch="false" />
+            <line number="41" hits="12" branch="false" />
+            <line number="42" hits="12" branch="false" />
+            <line number="46" hits="28" branch="true" condition-coverage="100% (4/4)" />
+            <line number="47" hits="2" branch="false" />
+            <line number="49" hits="26" branch="false" />
+            <line number="50" hits="26" branch="false" />
+            <line number="51" hits="26" branch="false" />
+            <line number="53" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="57" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="58" hits="4" branch="false" />
+            <line number="59" hits="6" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Domain.Entities.Member" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Domain/Entities/Member.cs" line-rate="0.9705882352941176" branch-rate="0.875" complexity="18">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="224" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="100" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="100" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ActiveLoans" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="276" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="150" branch="false" />
+              </lines>
+            </method>
+            <method name="Reconstitute" signature="(System.Guid,System.String,LibraryManager.Domain.ValueObjects.Email,System.Int32,LibraryManager.Domain.Enums.MemberStatus)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="31" hits="16" branch="false" />
+                <line number="32" hits="16" branch="false" />
+                <line number="33" hits="16" branch="false" />
+                <line number="34" hits="16" branch="false" />
+                <line number="35" hits="16" branch="false" />
+                <line number="36" hits="16" branch="false" />
+                <line number="37" hits="16" branch="false" />
+                <line number="38" hits="16" branch="false" />
+              </lines>
+            </method>
+            <method name="CanBorrow" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="42" hits="36" branch="true" condition-coverage="100% (2/2)" />
+                <line number="43" hits="4" branch="false" />
+                <line number="45" hits="32" branch="true" condition-coverage="100% (2/2)" />
+                <line number="46" hits="4" branch="false" />
+                <line number="47" hits="28" branch="false" />
+              </lines>
+            </method>
+            <method name="IncrementLoans" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="49" hits="48" branch="false" />
+              </lines>
+            </method>
+            <method name="DecrementLoans" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="53" hits="14" branch="true" condition-coverage="100% (2/2)" />
+                <line number="54" hits="12" branch="false" />
+                <line number="55" hits="14" branch="false" />
+              </lines>
+            </method>
+            <method name="Suspend" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="57" hits="8" branch="false" />
+              </lines>
+            </method>
+            <method name="Activate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="59" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,LibraryManager.Domain.ValueObjects.Email)" line-rate="0.8888888888888888" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="15" hits="56" branch="false" />
+                <line number="17" hits="56" branch="true" condition-coverage="50% (1/2)" />
+                <line number="18" hits="0" branch="false" />
+                <line number="20" hits="56" branch="false" />
+                <line number="21" hits="56" branch="false" />
+                <line number="22" hits="56" branch="false" />
+                <line number="23" hits="56" branch="false" />
+                <line number="24" hits="56" branch="false" />
+                <line number="25" hits="56" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="32" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="224" branch="false" />
+            <line number="10" hits="100" branch="false" />
+            <line number="11" hits="100" branch="false" />
+            <line number="12" hits="276" branch="false" />
+            <line number="13" hits="150" branch="false" />
+            <line number="15" hits="56" branch="false" />
+            <line number="17" hits="56" branch="true" condition-coverage="50% (1/2)" />
+            <line number="18" hits="0" branch="false" />
+            <line number="20" hits="56" branch="false" />
+            <line number="21" hits="56" branch="false" />
+            <line number="22" hits="56" branch="false" />
+            <line number="23" hits="56" branch="false" />
+            <line number="24" hits="56" branch="false" />
+            <line number="25" hits="56" branch="false" />
+            <line number="27" hits="32" branch="false" />
+            <line number="31" hits="16" branch="false" />
+            <line number="32" hits="16" branch="false" />
+            <line number="33" hits="16" branch="false" />
+            <line number="34" hits="16" branch="false" />
+            <line number="35" hits="16" branch="false" />
+            <line number="36" hits="16" branch="false" />
+            <line number="37" hits="16" branch="false" />
+            <line number="38" hits="16" branch="false" />
+            <line number="42" hits="36" branch="true" condition-coverage="100% (2/2)" />
+            <line number="43" hits="4" branch="false" />
+            <line number="45" hits="32" branch="true" condition-coverage="100% (2/2)" />
+            <line number="46" hits="4" branch="false" />
+            <line number="47" hits="28" branch="false" />
+            <line number="49" hits="48" branch="false" />
+            <line number="53" hits="14" branch="true" condition-coverage="100% (2/2)" />
+            <line number="54" hits="12" branch="false" />
+            <line number="55" hits="14" branch="false" />
+            <line number="57" hits="8" branch="false" />
+            <line number="59" hits="2" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Domain.Exceptions.BookNotAvailableException" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Domain/Exceptions/BookNotAvailableException.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="16" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="16" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Domain.Exceptions.DomainException" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Domain/Exceptions/DomainException.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="32" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="32" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Domain.Exceptions.LoanLimitExceededException" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Domain/Exceptions/LoanLimitExceededException.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(System.Guid)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="8" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="8" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Domain.Exceptions.MemberSuspendedException" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Domain/Exceptions/MemberSuspendedException.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(System.Guid)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="8" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="8" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Domain.ValueObjects.Email" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Domain/ValueObjects/Email.cs" line-rate="0.8333333333333334" branch-rate="0.7" complexity="13">
+          <methods>
+            <method name="get_Value" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="38" branch="false" />
+              </lines>
+            </method>
+            <method name="Equals" signature="(LibraryManager.Domain.ValueObjects.Email)" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="18" hits="2" branch="true" condition-coverage="50% (1/2)" />
+              </lines>
+            </method>
+            <method name="Equals" signature="(System.Object)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+            <method name="GetHashCode" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="ToString" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="7" hits="94" branch="false" />
+                <line number="9" hits="94" branch="true" condition-coverage="100% (2/2)" />
+                <line number="10" hits="2" branch="false" />
+                <line number="12" hits="92" branch="true" condition-coverage="100% (4/4)" />
+                <line number="13" hits="4" branch="false" />
+                <line number="15" hits="88" branch="false" />
+                <line number="16" hits="88" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="38" branch="false" />
+            <line number="7" hits="94" branch="false" />
+            <line number="9" hits="94" branch="true" condition-coverage="100% (2/2)" />
+            <line number="10" hits="2" branch="false" />
+            <line number="12" hits="92" branch="true" condition-coverage="100% (4/4)" />
+            <line number="13" hits="4" branch="false" />
+            <line number="15" hits="88" branch="false" />
+            <line number="16" hits="88" branch="false" />
+            <line number="18" hits="2" branch="true" condition-coverage="50% (1/2)" />
+            <line number="19" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="20" hits="4" branch="false" />
+            <line number="21" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Domain.ValueObjects.ISBN" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Domain/ValueObjects/ISBN.cs" line-rate="0.7142857142857143" branch-rate="0.7" complexity="14">
+          <methods>
+            <method name="get_Value" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="70" branch="false" />
+              </lines>
+            </method>
+            <method name="Equals" signature="(LibraryManager.Domain.ValueObjects.ISBN)" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="20" hits="4" branch="true" condition-coverage="50% (1/2)" />
+              </lines>
+            </method>
+            <method name="Equals" signature="(System.Object)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="21" hits="0" branch="true" condition-coverage="0% (0/2)" />
+              </lines>
+            </method>
+            <method name="GetHashCode" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="ToString" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="op_Implicit" signature="(LibraryManager.Domain.ValueObjects.ISBN)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="7" hits="132" branch="false" />
+                <line number="9" hits="132" branch="true" condition-coverage="100% (2/2)" />
+                <line number="10" hits="4" branch="false" />
+                <line number="12" hits="128" branch="false" />
+                <line number="14" hits="128" branch="true" condition-coverage="100% (4/4)" />
+                <line number="15" hits="4" branch="false" />
+                <line number="17" hits="124" branch="false" />
+                <line number="18" hits="124" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="70" branch="false" />
+            <line number="7" hits="132" branch="false" />
+            <line number="9" hits="132" branch="true" condition-coverage="100% (2/2)" />
+            <line number="10" hits="4" branch="false" />
+            <line number="12" hits="128" branch="false" />
+            <line number="14" hits="128" branch="true" condition-coverage="100% (4/4)" />
+            <line number="15" hits="4" branch="false" />
+            <line number="17" hits="124" branch="false" />
+            <line number="18" hits="124" branch="false" />
+            <line number="20" hits="4" branch="true" condition-coverage="50% (1/2)" />
+            <line number="21" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="LibraryManager.Infrastructure" line-rate="1" branch-rate="0.5" complexity="30">
+      <classes>
+        <class name="LibraryManager.Infrastructure.DependencyInjection" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Infrastructure/DependencyInjection.cs" line-rate="1" branch-rate="0.5" complexity="6">
+          <methods>
+            <method name="AddInfrastructure" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)" line-rate="1" branch-rate="0.5" complexity="4">
+              <lines>
+                <line number="15" hits="4" branch="true" condition-coverage="50% (1/2)" />
+                <line number="16" hits="4" branch="false" />
+                <line number="18" hits="4" branch="true" condition-coverage="50% (1/2)" />
+                <line number="19" hits="4" branch="false" />
+                <line number="21" hits="4" branch="false" />
+                <line number="22" hits="4" branch="false" />
+                <line number="24" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="AddMongoDb" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="12" branch="false" />
+                <line number="35" hits="62" branch="false" />
+                <line number="36" hits="62" branch="false" />
+                <line number="38" hits="8" branch="false" />
+              </lines>
+            </method>
+            <method name="AddRepositories" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="44" hits="4" branch="false" />
+                <line number="45" hits="4" branch="false" />
+                <line number="46" hits="4" branch="false" />
+                <line number="48" hits="4" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="4" branch="true" condition-coverage="50% (1/2)" />
+            <line number="16" hits="4" branch="false" />
+            <line number="18" hits="4" branch="true" condition-coverage="50% (1/2)" />
+            <line number="19" hits="4" branch="false" />
+            <line number="21" hits="4" branch="false" />
+            <line number="22" hits="4" branch="false" />
+            <line number="24" hits="4" branch="false" />
+            <line number="33" hits="12" branch="false" />
+            <line number="35" hits="62" branch="false" />
+            <line number="36" hits="62" branch="false" />
+            <line number="38" hits="8" branch="false" />
+            <line number="44" hits="4" branch="false" />
+            <line number="45" hits="4" branch="false" />
+            <line number="46" hits="4" branch="false" />
+            <line number="48" hits="4" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Infrastructure.Persistence.Documents.BookDocument" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Infrastructure/Persistence/Documents/BookDocument.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="164" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ISBN" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="210" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Title" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="210" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Author" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="210" branch="false" />
+              </lines>
+            </method>
+            <method name="get_TotalCopies" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="142" branch="false" />
+              </lines>
+            </method>
+            <method name="get_AvailableCopies" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="142" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="164" branch="false" />
+            <line number="12" hits="210" branch="false" />
+            <line number="13" hits="210" branch="false" />
+            <line number="14" hits="210" branch="false" />
+            <line number="15" hits="142" branch="false" />
+            <line number="16" hits="142" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Infrastructure.Persistence.Documents.LoanDocument" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Infrastructure/Persistence/Documents/LoanDocument.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="86" branch="false" />
+              </lines>
+            </method>
+            <method name="get_BookId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="68" branch="false" />
+              </lines>
+            </method>
+            <method name="get_MemberId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="68" branch="false" />
+              </lines>
+            </method>
+            <method name="get_BorrowedAt" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="68" branch="false" />
+              </lines>
+            </method>
+            <method name="get_DueDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="68" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ReturnedAt" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="68" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="100" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="86" branch="false" />
+            <line number="13" hits="68" branch="false" />
+            <line number="16" hits="68" branch="false" />
+            <line number="18" hits="68" branch="false" />
+            <line number="19" hits="68" branch="false" />
+            <line number="20" hits="68" branch="false" />
+            <line number="21" hits="100" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Infrastructure.Persistence.Documents.MemberDocument" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Infrastructure/Persistence/Documents/MemberDocument.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="104" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="132" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="132" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ActiveLoans" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="88" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="132" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="104" branch="false" />
+            <line number="12" hits="132" branch="false" />
+            <line number="13" hits="132" branch="false" />
+            <line number="14" hits="88" branch="false" />
+            <line number="15" hits="132" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Infrastructure.Persistence.Mappers.BookMapper" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Infrastructure/Persistence/Mappers/BookMapper.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="ToDocument" signature="(LibraryManager.Domain.Entities.Book)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="36" branch="false" />
+                <line number="10" hits="36" branch="false" />
+                <line number="11" hits="36" branch="false" />
+                <line number="12" hits="36" branch="false" />
+                <line number="13" hits="36" branch="false" />
+                <line number="14" hits="36" branch="false" />
+                <line number="15" hits="36" branch="false" />
+                <line number="16" hits="36" branch="false" />
+                <line number="17" hits="36" branch="false" />
+              </lines>
+            </method>
+            <method name="ToEntity" signature="(LibraryManager.Infrastructure.Persistence.Documents.BookDocument)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="38" branch="false" />
+                <line number="21" hits="38" branch="false" />
+                <line number="22" hits="38" branch="false" />
+                <line number="23" hits="38" branch="false" />
+                <line number="24" hits="38" branch="false" />
+                <line number="25" hits="38" branch="false" />
+                <line number="26" hits="38" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="36" branch="false" />
+            <line number="10" hits="36" branch="false" />
+            <line number="11" hits="36" branch="false" />
+            <line number="12" hits="36" branch="false" />
+            <line number="13" hits="36" branch="false" />
+            <line number="14" hits="36" branch="false" />
+            <line number="15" hits="36" branch="false" />
+            <line number="16" hits="36" branch="false" />
+            <line number="17" hits="36" branch="false" />
+            <line number="20" hits="38" branch="false" />
+            <line number="21" hits="38" branch="false" />
+            <line number="22" hits="38" branch="false" />
+            <line number="23" hits="38" branch="false" />
+            <line number="24" hits="38" branch="false" />
+            <line number="25" hits="38" branch="false" />
+            <line number="26" hits="38" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Infrastructure.Persistence.Mappers.LoanMapper" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Infrastructure/Persistence/Mappers/LoanMapper.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="ToDocument" signature="(LibraryManager.Domain.Entities.Loan)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="24" branch="false" />
+                <line number="10" hits="24" branch="false" />
+                <line number="11" hits="24" branch="false" />
+                <line number="12" hits="24" branch="false" />
+                <line number="13" hits="24" branch="false" />
+                <line number="14" hits="24" branch="false" />
+                <line number="15" hits="24" branch="false" />
+                <line number="16" hits="24" branch="false" />
+                <line number="17" hits="24" branch="false" />
+                <line number="18" hits="24" branch="false" />
+              </lines>
+            </method>
+            <method name="ToEntity" signature="(LibraryManager.Infrastructure.Persistence.Documents.LoanDocument)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="12" branch="false" />
+                <line number="22" hits="12" branch="false" />
+                <line number="23" hits="12" branch="false" />
+                <line number="24" hits="12" branch="false" />
+                <line number="25" hits="12" branch="false" />
+                <line number="26" hits="12" branch="false" />
+                <line number="27" hits="12" branch="false" />
+                <line number="28" hits="12" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="24" branch="false" />
+            <line number="10" hits="24" branch="false" />
+            <line number="11" hits="24" branch="false" />
+            <line number="12" hits="24" branch="false" />
+            <line number="13" hits="24" branch="false" />
+            <line number="14" hits="24" branch="false" />
+            <line number="15" hits="24" branch="false" />
+            <line number="16" hits="24" branch="false" />
+            <line number="17" hits="24" branch="false" />
+            <line number="18" hits="24" branch="false" />
+            <line number="21" hits="12" branch="false" />
+            <line number="22" hits="12" branch="false" />
+            <line number="23" hits="12" branch="false" />
+            <line number="24" hits="12" branch="false" />
+            <line number="25" hits="12" branch="false" />
+            <line number="26" hits="12" branch="false" />
+            <line number="27" hits="12" branch="false" />
+            <line number="28" hits="12" branch="false" />
+          </lines>
+        </class>
+        <class name="LibraryManager.Infrastructure.Persistence.Mappers.MemberMapper" filename="/home/runner/work/library-manager/library-manager/src/LibraryManager.Infrastructure/Persistence/Mappers/MemberMapper.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="ToDocument" signature="(LibraryManager.Domain.Entities.Member)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="28" branch="false" />
+                <line number="11" hits="28" branch="false" />
+                <line number="12" hits="28" branch="false" />
+                <line number="13" hits="28" branch="false" />
+                <line number="14" hits="28" branch="false" />
+                <line number="15" hits="28" branch="false" />
+                <line number="16" hits="28" branch="false" />
+                <line number="17" hits="28" branch="false" />
+              </lines>
+            </method>
+            <method name="ToEntity" signature="(LibraryManager.Infrastructure.Persistence.Documents.MemberDocument)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="16" branch="false" />
+                <line number="21" hits="16" branch="false" />
+                <line number="22" hits="16" branch="false" />
+                <line number="23" hits="16" branch="false" />
+                <line number="24" hits="16" branch="false" />
+                <line number="25" hits="16" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="28" branch="false" />
+            <line number="11" hits="28" branch="false" />
+            <line number="12" hits="28" branch="false" />
+            <line number="13" hits="28" branch="false" />
+            <line number="14" hits="28" branch="false" />
+            <line number="15" hits="28" branch="false" />
+            <line number="16" hits="28" branch="false" />
+            <line number="17" hits="28" branch="false" />
+            <line number="20" hits="16" branch="false" />
+            <line number="21" hits="16" branch="false" />
+            <line number="22" hits="16" branch="false" />
+            <line number="23" hits="16" branch="false" />
+            <line number="24" hits="16" branch="false" />
+            <line number="25" hits="16" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
