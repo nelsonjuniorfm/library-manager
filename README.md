@@ -1,5 +1,7 @@
 # LibraryManager
 
+[![Coverage](https://nelsonjuniorfm.github.io/library-manager/coverage/badge_linecoverage.svg)](https://nelsonjuniorfm.github.io/library-manager/coverage/)
+
 > **Projeto de referência** para estudo e adoção das principais estratégias de teste em aplicações .NET — testes unitários, de integração, E2E com BDD e análise de cobertura de código — aplicadas em um domínio real com arquitetura em camadas.
 
 Sistema de gestão de biblioteca construído com **.NET 10** seguindo os princípios de **Domain-Driven Design**, com cobertura completa de testes e pipeline CI/CD automatizado.
