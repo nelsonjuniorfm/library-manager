@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9554317548746518" branch-rate="0.7910447761194029" lines-covered="343" lines-valid="359" branches-covered="53" branches-valid="67" complexity="158" version="0" timestamp="1779232887">
+<coverage line-rate="0.9554317548746518" branch-rate="0.7910447761194029" lines-covered="343" lines-valid="359" branches-covered="53" branches-valid="67" complexity="158" version="0" timestamp="1779235457">
   <sources>
     <source>/home/runner/work/library-manager/library-manager/</source>
   </sources>

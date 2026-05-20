@@ -1,6 +1,6 @@
 Summary - LibraryManager Coverage Report
-  Generated on: 05/19/2026 - 23:21:27
-  Coverage date: 05/19/2026 - 23:20:07 - 05/19/2026 - 23:21:10
+  Generated on: 05/20/2026 - 00:04:17
+  Coverage date: 05/20/2026 - 00:02:48 - 05/20/2026 - 00:03:53
   Parser: MultiReport (6x Cobertura)
   Assemblies: 4
   Classes: 31
@@ -18,7 +18,7 @@ Summary - LibraryManager Coverage Report
   Covered methods: 105
   Fully covered methods: 102
   Total methods: 111
-  Tag: f0d693ec67ed64e1bff90a82fcacdc345f357252
+  Tag: e11ee1e8488584469808a48c3fe64e67dd8a894c
 
 LibraryManager.Api                                                     89.4%
   LibraryManager.Api.Endpoints.BookEndpoints                            100%
